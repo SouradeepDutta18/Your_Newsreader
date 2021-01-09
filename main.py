@@ -8,7 +8,7 @@ def say(str):
  speak = Dispatch("SAPI.SpVoice")
  speak.Speak(str)
 
-news = requests.get(f"http://newsapi.org/v2/top-headlines?country=in&apiKey={key}")  #putyour api key in the curly braces.
+news = requests.get(f"http://newsapi.org/v2/top-headlines?country=in&apiKey={key}")  #put your api key in the curly braces.
 news = news.json()
 articles = news["articles"]
 i = 0
